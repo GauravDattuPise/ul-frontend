@@ -1,0 +1,13 @@
+
+
+.login_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(230, 212, 188);
+    height: 800px;
+}
+
+
+
