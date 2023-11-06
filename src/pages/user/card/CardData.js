@@ -40,7 +40,7 @@ export default function CardData({ name, email, phone, userId }) {
             const confirmDelete = window.confirm("Are you sure you want to delete this user?");
             if (confirmDelete) {
                 try {
-                    const { data } = await axios.delete(`/user/deleteUser/${userId}`,{
+                    const { data } = await axios.delete(`http://ec2-51-20-127-56.eu-north-1.compute.amazonaws.com:5000/user/deleteUser/${userId}`,{
                         headers : {
                             "Content-Type" : "application/json",
                             "Authorization" : `Bearer ${token}`

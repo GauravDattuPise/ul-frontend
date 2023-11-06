@@ -1,6 +1,5 @@
 {
   "name": "client",
-  "proxy" : "http://ec2-51-20-127-56.eu-north-1.compute.amazonaws.com:5000",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
