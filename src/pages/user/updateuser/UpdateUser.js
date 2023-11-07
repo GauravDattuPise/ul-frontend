@@ -70,7 +70,7 @@ const UpdateUser = () => {
     async function getUser() {
         try {
                 
-            const { data } = await axios.get(`http://ec2-51-20-127-56.eu-north-1.compute.amazonaws.com:5000/user/getSingleUser/${userId}`,{
+            const { data } = await axios.get(`http://ec2-51-20-105-133.eu-north-1.compute.amazonaws.com:5000/user/getSingleUser/${userId}`,{
                 headers : {
                     "Content-Type" : "application/json",
                     "Authorization" : `Bearer ${token}`
@@ -99,7 +99,7 @@ const UpdateUser = () => {
         e.preventDefault();
 
         try {
-            const { data } = await axios.put(`http://ec2-51-20-127-56.eu-north-1.compute.amazonaws.com:5000/user/updateUser/${userId}`, inputs,{
+            const { data } = await axios.put(`http://ec2-51-20-105-133.eu-north-1.compute.amazonaws.com:5000/user/updateUser/${userId}`, inputs,{
                 headers : {
                     "Content-Type" : "application/json",
                     "Authorization" : `Bearer ${token}` 

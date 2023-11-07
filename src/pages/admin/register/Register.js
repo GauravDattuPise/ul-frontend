@@ -137,7 +137,7 @@ const Register = () => {
       }
 
       // sending user's data to backend
-      const res = await axios.post("http://ec2-51-20-127-56.eu-north-1.compute.amazonaws.com:5000/admin/register", adminObj)
+      const res = await axios.post("http://ec2-51-20-105-133.eu-north-1.compute.amazonaws.com:5000/admin/register", adminObj)
 
       // toast message
       if (res.data.status) {

@@ -37,7 +37,7 @@ const GetUsers = () => {
     // function for fetching users from the backend and assign to users state
     async function getAllUsers() {
         try {
-            const { data } = await axios.get('http://ec2-51-20-127-56.eu-north-1.compute.amazonaws.com:5000/user/getUsersDetails', {
+            const { data } = await axios.get('http://ec2-51-20-105-133.eu-north-1.compute.amazonaws.com:5000/user/getUsersDetails', {
                 headers: {
                     'Content-Type': 'application/json',
                     Authorization: `Bearer ${token}`,

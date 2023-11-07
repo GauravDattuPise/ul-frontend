@@ -75,7 +75,7 @@ const AddUser = () => {
                 phone: inputs.phone,
             }
 
-            const { data } = await axios.post("http://ec2-51-20-127-56.eu-north-1.compute.amazonaws.com:5000/user/addUser", userData,{
+            const { data } = await axios.post("http://ec2-51-20-105-133.eu-north-1.compute.amazonaws.com:5000/user/addUser", userData,{
                 headers : {
                     "Content-Type" : "application/json",
                     "Authorization" : `Bearer ${token}`

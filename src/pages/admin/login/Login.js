@@ -45,7 +45,7 @@ const Login = () => {
             }
 
             // sending data to backend
-            const res = await axios.post("http://ec2-51-20-127-56.eu-north-1.compute.amazonaws.com:5000/admin/login", adminObj)
+            const res = await axios.post("http://ec2-51-20-105-133.eu-north-1.compute.amazonaws.com:5000/admin/login", adminObj)
 
             let expiryTime = new Date();
            expiryTime.setMinutes(expiryTime.getMinutes() + 50)
